@@ -9,9 +9,6 @@ import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 import { PagesComponent } from './pages/pages.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { ProgressComponent } from './pages/progress/progress.component';
-import { Graficas1Component } from './pages/graficas1/graficas1.component';
 
 // Rutas
 import { APP_ROUTES } from './app.routes';
@@ -25,10 +22,7 @@ import { APP_ROUTES } from './app.routes';
     HeaderComponent,
     SidebarComponent,
     BreadcrumbsComponent,
-    PagesComponent,
-    DashboardComponent,
-    ProgressComponent,
-    Graficas1Component
+    PagesComponent
   ],
   imports: [  // Aquí van todos los módulos
     BrowserModule,
