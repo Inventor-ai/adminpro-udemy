@@ -15,10 +15,13 @@ import { APP_ROUTES } from './app.routes';
 
 // Módulos
 import { PagesModule } from './pages/pages.module';
+import { FormsModule } from '@angular/forms';
+// import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    // IncrementadorComponent   // Temp added for develop only. Move from here
     // LoginComponent,
     // RegisterComponent,
     // PagenofoundComponent,
@@ -30,7 +33,8 @@ import { PagesModule } from './pages/pages.module';
   imports: [  // Aquí van todos los módulos
     BrowserModule,
     PagesModule,
-    APP_ROUTES
+    APP_ROUTES,
+    FormsModule  // Temporal added for Incrementador. Delete it anfter move Incrementador
   ],
   providers: [],
   bootstrap: [AppComponent]

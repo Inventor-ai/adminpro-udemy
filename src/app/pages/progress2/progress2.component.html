@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="[valor]" aria-valuemin="0" aria-valuemax="100" [style.width]="valor+'%'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button (click)="res()" class="btn btn-outline-secondary" type="button">
+                    <i class="mdi mdi-minus"> </i>
+                  </button>
+                    </div>
+                    <input type="text" class="form-control" [value]="valor">
+                    <div class="input-group-prepend">
+                        <button (click)="plus()" class="btn btn-outline-secondary" type="button">
+                <i class="mdi mdi-plus"> </i>
+              </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
