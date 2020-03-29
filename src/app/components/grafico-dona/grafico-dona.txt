@@ -1,0 +1,24 @@
+
+Este archivo tiene como propósito explicar la manera en que se usa este componente
+
+Además de proponer otras formas en que podría usarse. Lo que significaría
+modificarlo para agregarle tales mejoras:
+
+1. Agregar un propiedad opcional para pasarle las etiquetas y los datos según la interface 
+   DataSets que consiste en un objeto con etiquetas y valores de la siguiente manera:
+       { labels: [ lbl1, lbl2, ... lblN ], data: [1, 3, ... n] }
+   
+2. Permitir el uso de una propiedad opcional del tipo Multidataset
+
+3. Opcionales significa que el componente podrá usar indistinta pero no simultáneamente, 
+   cualquiera de ellas. 
+       a) arreglo de etiquetas + arreglo de datos, o 
+       b) una propiedad DataSets en lugar de los arreglos anteriormente citados
+       c) Otra propiedad para carios grupos de datos (Multidatasets)
+
+Lo que significará que validará que cualquiera de ellas sea válida o devolverá 
+un mensaje de error informando que los datos recibidos no sumplen con ninguno 
+de estos criterios.
+
+Una vez terminado el componente, se actualizará el presente archivo para documentar
+la manera en que se puede usar este componente.

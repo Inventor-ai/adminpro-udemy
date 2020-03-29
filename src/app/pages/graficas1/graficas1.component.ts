@@ -56,17 +56,33 @@ export class Graficas1Component implements OnInit {
   data2Array() {
     const dataDona: any[] = [];
     for (const grafico in this.graficos) {
-        //  dataDona.push ( { labels: [grafico],
-        //                    data: [grafico],
-        //                    leyenda: [grafico]
-        //                } );
-         dataDona.push ( { labels: this.graficos[grafico].labels,
-                           data: this.graficos[grafico].data,
-                           leyenda: this.graficos[grafico].leyenda
-                       } );
+      if (this.graficos.hasOwnProperty(grafico) ) {
+          dataDona.push ( { labels: this.graficos[grafico].labels,
+                            data: this.graficos[grafico].data,
+                            leyenda: this.graficos[grafico].leyenda
+                        } );
+      }
+      // Estudiar con más detalle esta estructura
+      // console.log(grafico);
+      // console.log({grafico});
+      // console.log(grafico[labels]);
+      //    dataDona.push ( { labels: [grafico].labels,
+      //                      data: [grafico].data,
+      //                      leyenda: [grafico].leyenda
+      //                  } );
     }
-    console.log( {dataDona} );
     this.masDatos = dataDona;
+    /*
+    // Just for testing if coding format data structures ok
+    console.log( {dataDona} );
+    for (let i = 0; i < dataDona.length; i++) {
+      const element = dataDona[i];
+      console.log(i, {element});
+    }
+    this.masDatos = dataDona;
+    console.log('this.masDatos', this.masDatos[0].labels);
+    console.log('this.masDatos', this.masDatos[0].data);
+    */
   }
 
   data2Arrays() {
@@ -82,8 +98,6 @@ export class Graficas1Component implements OnInit {
     console.log( {data} );
     console.log( {labels} );
   }
-
-
 
   // // events
   // public chartClicked({ event, active }: { event: MouseEvent, active: {}[] }): void {

@@ -7,6 +7,7 @@ import { PagenofoundComponent } from '../shared/pagenofound/pagenofound.componen
 */
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser'; // Incorporado para usar *ngFor donasCharts
 import { ChartsModule } from 'ng2-charts';
 
 import { PagesComponent } from './pages.component';
@@ -20,7 +21,7 @@ import { PAGES_ROUTES } from './pages.routes';
 // Importacion temporal p/desarrollarlo
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
-import { BrowserModule } from '@angular/platform-browser';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule ({
    declarations: [ // Components
@@ -30,7 +31,8 @@ import { BrowserModule } from '@angular/platform-browser';
      ProgressComponent,
     //  Progress2Component,
      IncrementadorComponent,  // Importacion temporal p/desarrollarlo
-     GraficoDonaComponent
+     GraficoDonaComponent,
+     AccountSettingsComponent
    ],
    imports: [
      SharedModule,

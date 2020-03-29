@@ -26,4 +26,6 @@ const appRoutes: Routes = [
  // De lo contrario ignora la redirección si está vacía el URL.
 ];
 
+// export const APP_ROUTES = RouterModule.forRoot ( appRoutes, {useHash: true} );
+// export const APP_ROUTES = RouterModule.forRoot ( appRoutes, {useHash: true, onSameUrlNavigation: 'reload'} );
 export const APP_ROUTES = RouterModule.forRoot ( appRoutes, {useHash: true} );

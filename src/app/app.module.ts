@@ -15,8 +15,9 @@ import { APP_ROUTES } from './app.routes';
 
 // Módulos
 import { PagesModule } from './pages/pages.module';
-import { FormsModule } from '@angular/forms';
+// import { FormsModule } from '@angular/forms';
 // import { IncrementadorComponent } from './components/incrementador/incrementador.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     PagesModule,
     APP_ROUTES,
-    FormsModule  // Temporal added for Incrementador. Delete it anfter move Incrementador
+    // FormsModule  // Temporal added for Incrementador. Delete it after move Incrementador
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,18 @@
-<h3> Versión previa</h3>
+<h3> Versión Mejorada de la Tarea del Video</h3>
+<div class="row">
+    <div class="col-6" *ngFor="let grafico of masDatos">
+        <div class="card">
+            <div class="card-body">
+                <app-grafico-dona [leyenda]="grafico.leyenda" [donaEtiquetas]="grafico.labels" [donaDatos]="grafico.data"></app-grafico-dona>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3> Versión Tarea del Video</h3>
 <div class="row">
     <div class="col-6">
         <div class="card">
-            <!-- <div class="card" *ngFor="let grafico of graficos; let i = index;"> -->
             <div class="card-body">
                 <app-grafico-dona [leyenda]="graficos.grafico1.leyenda" [donaEtiquetas]="graficos.grafico1.labels" [donaDatos]="graficos.grafico1.data"></app-grafico-dona>
                 <!-- <app-grafico-dona [leyenda]="grafico.leyenda" [donaEtiquetas]="grafico.labels" [donaDatos]="grafico.data"></app-grafico-dona> -->
@@ -12,11 +22,10 @@
                     <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType">
                     </canvas>
                 </div>
- -->
+                -->
             </div>
         </div>
     </div>
-
     <div class="col-6">
         <div class="card">
             <div class="card-body">
@@ -41,39 +50,4 @@
             </div>
         </div>
     </div>
-    <!-- 
-    <div class="col-6">
-        <div class="card" *ngFor="let grafico of graficos; let i = index;">
--->
-    <!-- <div class="card" *ngFor="let grafico of graficos; let i = index;"> -->
-    <!-- 
-            <div class="card-body">
-                <app-grafico-dona [leyenda]="grafico[i].leyenda" [donaEtiquetas]="grafico[i].labels" [donaDatos]="grafico[i].data"></app-grafico-dona>
--->
-    <!-- <app-grafico-dona [leyenda]="grafico.leyenda" [donaEtiquetas]="grafico.labels" [donaDatos]="grafico.data"></app-grafico-dona> -->
-    <!-- <app-grafico-dona leyenda="Gente" [donaEtiquetas]="doughnutChartLabels" [donaDatos]="doughnutChartData"></app-grafico-dona> -->
-    <!--                 
-                <div style="display: block">
-                    <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType">
-                    </canvas>
-                </div>
-                -->
-    <!-- 
-            </div>
-        </div>
-    </div>
--->
-
-    <!-- 
-    <div class="col-6">
-        <div class="card">
-            <div class="card-body">
-                <div style="display: block">
-                    <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType">
-                    </canvas>
-                </div>
-            </div>
-        </div>
-    </div>
-     -->
 </div>
