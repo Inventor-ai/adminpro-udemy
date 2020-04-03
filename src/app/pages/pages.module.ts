@@ -22,6 +22,10 @@ import { PAGES_ROUTES } from './pages.routes';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { Promesa2Component } from './promesa2/promesa2.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { RxjsfxComponent } from './rxjsfx/rxjsfx.component';
 
 @NgModule ({
    declarations: [ // Components
@@ -32,7 +36,11 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     //  Progress2Component,
      IncrementadorComponent,  // Importacion temporal p/desarrollarlo
      GraficoDonaComponent,
-     AccountSettingsComponent
+     AccountSettingsComponent,
+     PromesasComponent,
+     Promesa2Component,
+     RxjsComponent,
+     RxjsfxComponent
    ],
    imports: [
      SharedModule,
